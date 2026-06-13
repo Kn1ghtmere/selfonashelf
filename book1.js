@@ -2,11 +2,13 @@ var pages = [
     {
         type: "cover",
         title: "The Knights Journey",
+        image: "assets/coverpage.png",
         subtitle: "A tale not worth telling",
         lineHeight: 2
     },
     {
         title: "I",
+        image: "assets/page1.png",
         lineHeight: "5.2",
         lines : [
              "Another obstacle left behind,",
@@ -17,6 +19,7 @@ var pages = [
     },
     {
         title: "II",
+        image: "assets/page2.png",
         lineHeight: "3",
         lines: [
             "Traversing upwards with no dimes,",
@@ -30,6 +33,7 @@ var pages = [
     },
     {
         title: "III",
+        image: "assets/page3.png",
         lineHeight: "2.5",
         lines: [
             "On the path to the mountains he continues.",
@@ -44,6 +48,7 @@ var pages = [
     },
     {
         title: "IV",
+        image: "assets/page4.png",
         lineHeight: "3",
         lines: [
              "He took on a purpose and an oath of a knight,",
@@ -73,8 +78,14 @@ function show() {
 
 document.getElementById("left").innerHTML= html;
    document.getElementById("left").style.lineHeight = page.lineHeight;
-}
 
+   if (page.image) {
+    document.getElementById("right").innerHTML = "<img src='" + page.image + "' style='width: 100%; height: 100%; object-fit: contain;'>";
+    
+} else {
+    document.getElementById("right").innerHTML = "";
+}
+}
 show();
 
 document.getElementById("next").onclick = function() {
