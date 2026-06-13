@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self On A Shelf</title>
@@ -13,15 +14,19 @@
            <h2>Knightmere's Archive</h2>
     <div class="bookshelf">
         <!-- first row of lines ig-->
-        <div class="slotbook1">
-                <img src="https://opengameart.org/sites/default/files/book2.gif" alt="book1gif" onclick="document.getElementById('book1').style.display='flex';">
+     <div class="slotbook1">
+                     <img src="assets/book1.gif" alt="book1gif" onclick="document.getElementById('book1').style.display='flex';">
 
-    <div id="book1" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+          <div id="book1" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
 
-
-                <iframe src="book1.html" width="400" height="400" style="border:none"></iframe>
+               <iframe src="book1.html" width="600" height="420" style="border:none"></iframe>
+               
+         </div> 
+     </div>
+        <div class="scroll1" >
+                            <img src="assets/scroll1.png" alt="scroll1">
+             
         </div>
-        <div class="slot" ></div>
         <div class="slot" ></div>
         <div class="slot" ></div>
         <div class="slot" ></div>
