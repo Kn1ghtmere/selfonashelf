@@ -4,7 +4,8 @@ var pages = [
         title: "The Knights Journey",
         image: "assets/coverpage.png",
         subtitle: "A tale not worth telling",
-        lineHeight: 2
+        lines: "mum said go touch grass , so i just wrote this cuz why not",
+        lineHeight: 3.5
     },
     {
         title: "I",
@@ -68,7 +69,8 @@ function show() {
     var html = "";
     if(page.type == "cover") {
         html = "<h1>" + page.title + "</h1>";
-        html = html + "<p>" + page.subtitle + "</p>";
+        html = html + "<h3>" + page.subtitle + "</h3>";
+        html = html + "<p>" + page.lines + "</p>";
 } else {
     html = "<h2>" + page.title + "</h2>";
     for (var i = 0; i  < page.lines.length; i++) {
