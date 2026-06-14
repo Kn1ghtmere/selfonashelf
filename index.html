@@ -32,7 +32,7 @@
 
 
                     <div class="scroll1" >
-                            <img src="assets/scroll1.png" alt="scroll1">
+                            <img src="assets/scroll1.png" alt="scroll1" onclick="document.getElementById('scroll1').style.display='flex';">
              
                     </div>
 
@@ -93,7 +93,11 @@
         <iframe src="book1.html" width="600" height="420" style="border:none"></iframe>
                
        </div> 
+       <div id="scroll1" style="display:none; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+             
+           <img src="assets/scrollcontainer.png" style="border:none">
 
+       </div>
 
 </body>
 </html>
