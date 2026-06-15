@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Cinzel:wght@400;600&family=Playfair+Display:wght@400;700;900&family=Cormorant+Upright:wght@400;600;700&family=Cormorant+Garamond:wght@400;600&family=Spectral:wght@400;600&family=Crimson+Pro:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html ,body {
+            background-color: #d4a564;
+            background-image: url(assets/natural-paper.png);
+            width: 100%;
+            height: 100%;
+            position:relative;
+}
+
+h1 , p {
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family: 'EB Garamond' , serif;
+}
+
+p {
+    line-height: 30px;
+    font-family: 'Cormorant Upright', serif;
+    font-weight: 700;
+    font-size: large;
+    color: #4a3728;
+}
+.stanza {
+    padding-bottom: 40px;
+}
+
+.sign {
+    text-align: right;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}

@@ -97,6 +97,15 @@ body {
   height: 100%;
   width: auto;
 }
+.musicpage img {
+  height: 100%;
+  width: 100%;
+}
+
+.drawframe img {
+  height:100%;
+  width: 100%;
+}
 
 .slotbook1 {
   height: 100%;
