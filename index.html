@@ -49,6 +49,12 @@
 
                     </div>
 
+                    <div class="camera1">
+
+                            <img src="assets/camera1.png" alt="camera1" onclick="document.getElementById('camera1').style.display='flex';">
+
+                    </div>
+
      
         </div>
 
@@ -90,41 +96,63 @@
 
 
 
-
-
-
+           
+            
 
 
     </div>
 
+            <div class="banner">
+
+              <img src="assets/bannerfat1.png" alt="banner">
+
+            </div>
 
 
 
       <!-- modal divs go here cuz ehheeh them glitches were wild-->
      
-       <div id="book1" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="book1" style="display:none; z-index:100; position:fixed; inset:0; background:rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
     
-        <iframe src="book1.html" width="600" height="420" style="border:none"></iframe>
+        <iframe src="book1.html" width="600" height="420" style="border:none"; z-index:100></iframe>
                
        </div> 
-       <div id="scroll1" style="display:none; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="scroll1" style="display:none; z-index:100; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
              
            <img src="assets/scrollcontainer.png" style="border:none">
 
        </div>
 
-       <div id="poem1" style="display:none; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="poem1" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
                
                 <iframe src="haytham.html" style="border:none; width: 650px; height:350px;"></iframe>
 
        </div>
 
-       <div id="drawframe" style="display:none; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="drawframe" style="display:none; z-index:100; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
 
           <img src="assets/drawing.png" style="border:none; width:400px; height:600px" >
 
        </div>
 
+       <div id="camera1" style="display:none; position:fixed; z-index: 100; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+
+          <iframe src="camera1.html" style="border:none; width: 650px; height: 650px;"></iframe>
+
+       </div>
+
+
+
+       <footer>
+        <p>made by kn1ghtmere</p>
+       </footer>
+       <div class="footer2">
+
+           <p>A project for <a href="https://horizons.hackclub.com/?ref=3706">Hackclub-Horizons</a></p>
+           <p>Made with determination , html , css and a sprinkle of js</p>
+           <p>you look sad , Try Smiling 😋</p>
+
+       </div>
 
 </body>
 </html>

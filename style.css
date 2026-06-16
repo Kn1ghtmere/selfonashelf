@@ -17,6 +17,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  position:relative;
 }
 
 .top {
@@ -47,6 +48,7 @@ body {
   flex: 1;
   gap: 25px;
   background-size: cover;
+  position: relative;
   background-position: center;
   padding: 40px 48px;
   display: flex;
@@ -109,4 +111,41 @@ body {
 
 .slotbook1 {
   height: 100%;
+}
+
+.camera1 img {
+  height: 100%;
+  width: auto;
+}
+
+.banner {
+  position: absolute;
+  right: 40px;
+  top: 160px;
+}
+.banner img {
+  height: 620px;
+  width: 400px;
+  z-index: 10;
+}
+
+footer {
+  background-color: #1a1008;
+  padding: 24px 48px;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  color: #9a8060;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+}
+
+.footer2 {
+  background-color: #0f0804;
+  padding: 16px 48px ;
+  text-align: center;
+  font-size: 14px;
+  color: #7c5740;
+  letter-spacing: 0.1em;
 }
