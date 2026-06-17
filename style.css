@@ -128,6 +128,11 @@ body {
   width: 400px;
   z-index: 10;
 }
+.hourglass img {
+     height: 85px;
+     width: 85px;
+}
+
 
 footer {
   background-color: #1a1008;
