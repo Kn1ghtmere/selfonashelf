@@ -112,7 +112,9 @@ body {
 .slotbook1 {
   height: 100%;
 }
-
+.camera1 {
+  position: relative;
+}
 .camera1 img {
   height: 100%;
   width: auto;
@@ -153,4 +155,36 @@ footer {
   font-size: 14px;
   color: #7c5740;
   letter-spacing: 0.1em;
+}
+
+.descriptions {
+  display: none;
+  position: absolute;
+  bottom:110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1008;
+  color:#e8d5a3;
+  padding: 4px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+.slotbook1:hover .descriptions {
+  display: block;
+}
+.scroll1:hover .descriptions{
+  display: block;
+}
+.musicpage:hover .descriptions{
+  display: block;
+}
+.drawframe:hover .descriptions {
+  display: block;
+}
+.camera1:hover .descriptions {
+  display:block;
+}
+.hourglass:hover .descriptions {
+  display: block;
 }
