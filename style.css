@@ -5,19 +5,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+   overflow-x: hidden;
+  overflow-y: auto;
+} 
 
 html, body {
   width: 100%;
   height: 100%;
   font-family: 'EB Garamond', serif;
-  overflow-x: hidden;
-  overflow-y: auto;
+ 
 }
 
 body {
   display: flex;
   flex-direction: column;
-  position:relative;
 }
 
 .top {
@@ -90,6 +92,9 @@ body {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 
 }
+.slotbook1, .scroll1, .musicpage, .drawframe, .hourglass {
+  position: relative;
+}
 
 .scroll1 img {
   width: 100%;
@@ -119,7 +124,13 @@ body {
   height: 100%;
   width: auto;
 }
-
+.pijoncage {
+  position:relative;
+}
+.pijoncage img {
+  height:100%;
+  width: 100%;
+}
 .banner {
   position: absolute;
   right: 40px;
@@ -185,6 +196,43 @@ footer {
 .camera1:hover .descriptions {
   display:block;
 }
+.pijoncage:hover .descriptions {
+  display:block;
+}
 .hourglass:hover .descriptions {
   display: block;
+}
+
+.pigeon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 200;
+  display: flex;
+  align-items:center;
+  flex-direction: row-reverse;
+  gap: 8px;
+}
+
+#pigeon-btn {
+   font-size: 50px; 
+   cursor:pointer;
+}
+
+.words-scroll {
+  background: #f0e0c0;
+  color: #3d2d1e;
+  font-family: georgia , serif;
+  font-size: 12px;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width:0;
+  max-height: 36px;
+  border-radius: 4px;
+  transition: max-width 0.6s ease, padding 0.4s ease;
+}
+.words-scroll.open {
+  max-width: 400px;
+  padding: 8px 12px;
 }

@@ -54,7 +54,11 @@
                             <img src="assets/camera1.png" alt="camera1" onclick="document.getElementById('camera1').style.display='flex';">
                             <span class="descriptions">Random pics from my phone's gallery</span>
                     </div>
-
+                    
+                    <div class="pijoncage">
+                         <img src="assets/pijoncage.png" alt="pijoncage" onclick="document.getElementById('pijoncage').style.display='flex';">
+                         <span class="descriptions">A wise bird used to be here</span>
+                    </div>
      
         </div>
 
@@ -140,6 +144,11 @@
           <iframe src="camera1.html" style="border:none; width: 700px; height: 500px;"></iframe>
 
        </div>
+       <div id="pijoncage" style="display:none; position: fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+
+           <img src="assets/openscrol.png" alt="scrol" style="width:400px; height:200px;" > 
+
+       </div>
        
        <div id="hourglass" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
             
@@ -160,5 +169,17 @@
 
        </div>
 
+
+    
+        <div class="pigeon">
+          <span class="descriptions">The wise messenger pejon</span>
+          <span id="pigeon-btn" onclick="toggleScroll()">🕊️</span>
+          <div class="words-scroll" id="words-scroll">
+            <span id="words"></span>
+          </div>
+        </div>
+
+
+<script src="index.js"></script>
 </body>
 </html>
