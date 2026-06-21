@@ -1,29 +1,24 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-
-
-
-
-html, body {
-
+html,body {
     width: 100%;
     height: 100%;
-    background: url(assets/natural-paper.png) ;
+    background: url(assets/natural-paper.png);
     background-color: #805532;
     overflow: hidden;
+
 }
 
-.camerarolls {
+.catpics {
     width: 100%;
     height:calc(100% - 60px);
-    display:flex;
+    display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
 #pics img {

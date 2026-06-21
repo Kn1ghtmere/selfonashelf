@@ -84,7 +84,7 @@ body {
   display: flex;
   align-items: flex-end;
   min-height: 115px;
-  gap: 12px;
+  gap: 28px;
   background-color: #5a3210;
   border-top: 6px solid #3a1f08;
   padding: 16px 20px 10px 20px;
@@ -92,7 +92,7 @@ body {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 
 }
-.slotbook1, .scroll1, .musicpage, .drawframe, .hourglass {
+.slotbook1, .scroll1, .musicpage, .drawframe, .hourglass, .paw {
   position: relative;
 }
 
@@ -124,6 +124,10 @@ body {
   height: 100%;
   width: auto;
 }
+.paw img {
+  height: 100%;
+  width: 100%;
+}
 .pijoncage {
   position:relative;
 }
@@ -131,15 +135,29 @@ body {
   height:100%;
   width: 100%;
 }
+
+
 .banner {
   position: absolute;
-  right: 40px;
-  top: 160px;
+  right: 5%;
+  top: 10%;
 }
 .banner img {
   height: 620px;
   width: 400px;
   z-index: 10;
+}
+@media (max-width: 1200px) {
+  .banner {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .banner img {
+    height: auto;
+    width: 60%;
+  }
 }
 .hourglass img {
      height: 85px;
@@ -194,6 +212,9 @@ footer {
   display: block;
 }
 .camera1:hover .descriptions {
+  display:block;
+}
+.paw:hover .descriptions {
   display:block;
 }
 .pijoncage:hover .descriptions {

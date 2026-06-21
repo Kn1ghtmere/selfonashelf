@@ -59,6 +59,13 @@
                          <img src="assets/pijoncage.png" alt="pijoncage" onclick="document.getElementById('pijoncage').style.display='flex';">
                          <span class="descriptions">A wise bird used to be here</span>
                     </div>
+
+                    <div class="paw" >
+
+                      <img src="assets/paw.png" alt="catpaw" onclick="document.getElementById('catpaw').style.display='flex';">
+                      <span class="descriptions">I absolutely love cattos</span>
+
+                    </div>
      
         </div>
 
@@ -92,7 +99,11 @@
 
  
 
+            <div class="banner">
 
+              <img src="assets/bannerfat1.png" alt="banner">
+
+            </div>
 
 
 
@@ -106,11 +117,7 @@
 
     </div>
 
-            <div class="banner">
-
-              <img src="assets/bannerfat1.png" alt="banner">
-
-            </div>
+           
 
 
 
@@ -150,6 +157,12 @@
 
        </div>
        
+       <div id="catpaw" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content: center;" onclick="if(event.target===this) this.style.display='none'">
+
+           <iframe src="catpics.html" style="border:none; width: 700px; height:500px"></iframe>
+
+       </div>
+
        <div id="hourglass" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
             
          <iframe src="https://pomofocus-app1.vercel.app/" style="border:none; width: 620px; height: 620px;"></iframe>
