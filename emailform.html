@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+             }
+             html,body {
+                height: 100%;
+                background: url(assets/natural-paper.png);
+             }
+             body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem;
+                background-color: #cea76d;
+             }
+             h3 {
+                font-size: 22px;
+                font-weight: 500;
+                margin-bottom:1.5rem;
+                color: #333
+             }
+
+              form#mailme {
+                display: flex;
+                flex-direction: column;
+                border:1px solid #ddd;
+                border-radius:12px;
+                padding:2rem;
+                width: 100%;
+                max-width: 420px;
+                gap:0.75rem;
+                
+              }
+
+              form#mailme input,
+              form#mailme textarea {
+                padding:9px 12px;
+                
+              }
+              form#mailme button {
+                padding: 10px;
+                font-size: 15px;
+                cursor:pointer;
+
+              }
+        </style>
+    </head>
+    <body>
+           <h3>Say hi</h3>
+           <form id="mailme">
+            <input type="text" name="name" placeholder="mister bean" required>
+
+            <input type="email" name="email" placeholder="batman@gotham.com" required>
+
+            <textarea name="message" rows="5" placeholder="wassup............." required></textarea>
+             
+            <button type="submit">send</button>
+        
+        
+           </form>
+
+           <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" ></script>
+
+        <script>
+            emailjs.init("E9efcnz_beM5UOnOz");
+
+            document.getElementById("mailme").addEventListener("submit", function(e){
+                e.preventDefault();
+                emailjs.sendForm(
+                    "service_p5tbgw8",
+                    "template_yzz3bpc",
+                    this
+                ).then(() => {
+                    alert("Message sent !");
+                    this.reset();
+
+                }).catch((error) => {
+                    alert("Failed to send");
+                    console.error(error);
+                });
+            });
+        </script>
+
+
+
+    </body>
+</html>

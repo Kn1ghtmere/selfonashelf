@@ -223,6 +223,9 @@ footer {
 .hourglass:hover .descriptions {
   display: block;
 }
+.socials:hover .descriptions {
+  display:block;
+}
 
 .pigeon {
   position: fixed;

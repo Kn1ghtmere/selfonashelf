@@ -79,16 +79,61 @@
 
         </div>
 
+        <div class="drawframe">
+
+          <img src="assets/drawframe.png" onclick="document.getElementById('drawing').style.display='flex';">
+          <span class="descriptions" > i like castles , my frend's frend made this one</span>
+
+        </div>
+
         </div>
 
                   <!--thrid shelf stuff -->
          
-        <div class="shelf">
-
-          <img src="assets/book1.gif" alt="book1gif" >
-
-
+        <div class="shelf" style="gap: 85px;">
+          <div class="socials">
+          <a href="https://www.instagram.com/kn1ghtmere/" target="_blank" style="display: inline-block; height: 80px;" >
+            <img src="assets/insta.png" alt="book1gif" style="height: 100%; width: auto;" >
+          </a>
+          <span class="descriptions">Yes i do socialize , sometimes</span>
+          </div>
+          
+          <div class="socials">
+            <a href="https://www.chess.com/member/kn1ghtmeere" target="_blank" style="display: inline-block; height: 80px;">
+              <img src="assets/pawn.png" style="height:100%; width: auto;">
+            </a>
+            <span class="descriptions">I think im good at it</span>
+          </div>
         
+          <div class="socials">
+
+           <a href="https://discord.com/users/872001251502587914" target="_blank" style="display: inline-block; height: 80px;">
+           <img src="assets/discord.png" style="height: 100%; width: auto;">
+
+           </a>
+           <span class="descriptions">I basically live here</span>
+
+
+          </div>
+
+          <div class="socials">
+             <a href="https://github.com/Kn1ghtmere" target="_blank" style="display:inline-block; height: 80px;">
+              <img src="assets/github.png" style="height: 100%; width: auto;">
+             </a>
+             <span class="descriptions">I just learned how to use it</span>
+
+
+
+          </div>
+
+          <div class="socials">
+            <img src="assets/gmail.png" style="height: 100%; width: auto;" onclick="getElementById('mailme').style.display='flex'">
+            <span class="descriptions">I dont really know whyd u need it, but sure</span>
+          
+          </div>
+
+
+
         </div>
 
        
@@ -169,7 +214,16 @@
 
 
        </div>
+        <div id="drawing" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content: center;" onclick="if(event.target===this) this.style.display='none'">
+           <div  style="position: relative;">
+          <img src="assets/coolauntiecastle.jpg" style="width:700px; height: 700px;">
+          <a href="https://www.instagram.com/artbydua56/" target="_blank" style="position: absolute; bottom: 12px; right: 12px; background: #1a1008; color:#e8d5a3; padding:6px 12px; font-family: georgia , serif; font-size:12px; text-decoration: none; border-radius: 3px;">View instagram page?</a>
+          </div>
 
+        </div>
+        <div id="mailme" style="display:none; position:fixed; z-index: 100; inset: 0; background: rgba(0,0,0,0.6); align-items: center; justify-content: center;" onclick="if(event.target===this) this.style.display='none'">
+          <iframe src="emailform.html" style="border: none; width: 620px; height: 620px;"></iframe>
+        </div>
 
        <footer>
         <p>made by kn1ghtmere</p>
