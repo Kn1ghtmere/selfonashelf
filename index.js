@@ -79,3 +79,39 @@ document.querySelectorAll('.socials').forEach(el => {
     soci.play();
 });
 });
+
+
+
+function openDial() {
+    document.getElementById('omnitrix').style.opacity = 0;
+    document.getElementById('omnitrixopen').style.opacity = 1;
+};
+function closeDial() {
+    document.getElementById('omnitrix').style.opacity = 1;
+    document.getElementById('omnitrixopen').style.opacity = 0;
+};
+const core = new Audio('assets/sounds/core.mp3');
+  document.querySelectorAll('.watch').forEach(el => {
+    el.addEventListener('mouseenter' , () => {
+    core.currentTime = 0;
+    core.play();
+    });
+    el.addEventListener('mouseleave', () => {
+        core.pause();
+        core.currentTime = 0;
+    
+    });
+  });
+
+ const transform = new Audio('assets/sounds/omnitrix.mp3');
+ document.querySelector('.watch').addEventListener('click', () => {
+  transform.currentTime = 0;
+  transform.play();
+ });
+
+ document.querySelector('.watch').addEventListener('click', () => {
+    const flashgreen = document.getElementById('flash');
+    flashgreen.classList.remove('active');
+    void flashgreen.offsetWidth;
+    flashgreen.classList.add('active');
+ });

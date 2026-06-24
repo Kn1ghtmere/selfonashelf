@@ -136,6 +136,9 @@ body {
   width: 100%;
 }
 
+#omnitrix, #omnitrixopen {
+  transition: opacity 0.3s ease;
+}
 
 .banner {
   position: absolute;
@@ -162,6 +165,19 @@ body {
 .hourglass img {
      height: 85px;
      width: 85px;
+}
+.watch {
+  position: relative;
+  height: 75px;
+  width: 70px;
+}
+.watch img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  transition: opacity 0.3s ease;
 }
 
 
@@ -259,4 +275,23 @@ footer {
 .words-scroll.open {
   max-width: 400px;
   padding: 8px 12px;
+}
+
+#flash {
+  position:fixed;
+  inset: 0;
+  background: #00ff00;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  transition: opacity 0.1s ease;
+}
+
+#flash.active {
+  animation: greenflash 0.6s ease-out forwards;
+
+}
+@keyframes greenflash {
+  0% {opacity: 0.7;}
+  100% {opacity: 0;}
 }
