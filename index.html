@@ -24,43 +24,43 @@
 
         <div class="shelf">
         <!-- first row of lines ig-->
-                    <div class="slotbook1">
+                    <div class="slotbook1" id="book">
                      <img src="assets/book1.gif" alt="book1gif" onclick="document.getElementById('book1').style.display='flex';">
                     <span class="descriptions" >A product of my boredom</span>  
                     
                    </div>
 
 
-                    <div class="scroll1" >
+                    <div class="scroll1" id="scroll">
                             <img src="assets/scroll1.png" alt="scroll1" onclick="document.getElementById('scroll1').style.display='flex';">
                             <span class="descriptions" >anythin but studyin</span>
                     </div>
                     
-                    <div class="musicpage">
+                    <div class="musicpage" id="poem">
            
                      <img src="assets/musicpage.png" alt="musicpage" onclick="document.getElementById('poem1').style.display='flex';">
                              <span class="descriptions">dont ask me whos haytham jus read the poem i wrote</span>
                     </div>
 
-                    <div class="drawframe">
+                    <div class="drawframe" id="paint">
                           
                             <img src="assets/drawframe.png" alt="drawingframe" onclick="document.getElementById('drawframe').style.display='flex';">
                             <span class="descriptions">i drew it on my phone, yes i was bored</span>
 
                     </div>
 
-                    <div class="camera1">
+                    <div class="camera1" id="camer">
 
                             <img src="assets/camera1.png" alt="camera1" onclick="document.getElementById('camera1').style.display='flex';">
                             <span class="descriptions">Random pics from my phone's gallery</span>
                     </div>
                     
-                    <div class="pijoncage">
+                    <div class="pijoncage" id="kabooter">
                          <img src="assets/pijoncage.png" alt="pijoncage" onclick="document.getElementById('pijoncage').style.display='flex';">
                          <span class="descriptions">A wise bird used to be here</span>
                     </div>
 
-                    <div class="paw" >
+                    <div class="paw" id="cattos" >
 
                       <img src="assets/paw.png" alt="catpaw" onclick="document.getElementById('catpaw').style.display='flex';">
                       <span class="descriptions">I absolutely love cattos</span>
@@ -72,14 +72,14 @@
                     <!--second shelf stuff-->
         <div class="shelf">
 
-        <div class="hourglass">
+        <div class="hourglass" id="leeza">
             
           <img src="assets/hourlgass.png" alt="hourglass" onclick="document.getElementById('hourglass').style.display='flex';" >
             <span class="descriptions">My cool fren made it, i like it</span>
 
         </div>
 
-        <div class="drawframe">
+        <div class="drawframe" id="auntie">
 
           <img src="assets/drawframe.png" onclick="document.getElementById('drawing').style.display='flex';">
           <span class="descriptions" > i like castles , my frend's frend made this one</span>
@@ -168,53 +168,53 @@
 
       <!-- modal divs go here cuz ehheeh them glitches were wild-->
      
-       <div id="book1" style="display:none; z-index:100; position:fixed; inset:0; background:rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="book1" style="display:none; z-index:100; position:fixed; inset:0; background:rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) { this.style.display='none'; booksound.pause(); booksound.currentTime=0;}">
     
         <iframe src="book1.html" width="600" height="420" style="border:none" z-index:100;></iframe>
                
        </div> 
-       <div id="scroll1" style="display:none; z-index:100; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="scroll1" style="display:none; z-index:100; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content:center;" onclick="if(event.target===this) { this.style.display='none'; scrollsound.pause(); scrollsound.currentTime=0;}">
              
            <img src="assets/scrollcontainer.png" style="border:none">
 
        </div>
 
-       <div id="poem1" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="poem1" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) { this.style.display='none'; ahem.pause(); ahem.currentTime=0;}">
                
                 <iframe src="haytham.html" style="border:none; width: 650px; height:350px;"></iframe>
 
        </div>
 
-       <div id="drawframe" style="display:none; z-index:100; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="drawframe" style="display:none; z-index:100; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) { this.style.display='none'; tada.pause(); tada.currentTime=0;}">
 
           <img src="assets/drawing.png" style="border:none; width:400px; height:600px" >
 
        </div>
 
-       <div id="camera1" style="display:none; position:fixed; z-index: 100; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="camera1" style="display:none; position:fixed; z-index: 100; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content:center;" onclick="if(event.target===this) { this.style.display='none'; camera.pause(); camera.currentTime=0;}">
 
           <iframe src="camera1.html" style="border:none; width: 700px; height: 500px;"></iframe>
 
        </div>
-       <div id="pijoncage" style="display:none; position: fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="pijoncage" style="display:none; position: fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) { this.style.display='none'; pijon.pause(); pijon.currentTime=0;}">
 
            <img src="assets/openscrol.png" alt="scrol" style="width:400px; height:200px;" > 
 
        </div>
        
-       <div id="catpaw" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content: center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="catpaw" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content: center;" onclick="if(event.target===this) { this.style.display='none'; catto.pause(); catto.currentTime=0;}">
 
            <iframe src="catpics.html" style="border:none; width: 700px; height:500px"></iframe>
 
        </div>
 
-       <div id="hourglass" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) this.style.display='none'">
+       <div id="hourglass" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this){ this.style.display='none'; time.pause(); time.currentTime=0;}">
             
          <iframe src="https://pomofocus-app1.vercel.app/" style="border:none; width: 620px; height: 620px;"></iframe>
 
 
        </div>
-        <div id="drawing" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content: center;" onclick="if(event.target===this) this.style.display='none'">
+        <div id="drawing" style="display:none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content: center;" onclick="if(event.target===this) { this.style.display='none'; tada.pause(); tada.currentTime=0;}">
            <div  style="position: relative;">
           <img src="assets/coolauntiecastle.jpg" style="width:700px; height: 700px;">
           <a href="https://www.instagram.com/artbydua56/" target="_blank" style="position: absolute; bottom: 12px; right: 12px; background: #1a1008; color:#e8d5a3; padding:6px 12px; font-family: georgia , serif; font-size:12px; text-decoration: none; border-radius: 3px;">View instagram page?</a>
@@ -239,7 +239,6 @@
 
     
         <div class="pigeon">
-          <span class="descriptions">The wise messenger pejon</span>
           <span id="pigeon-btn" onclick="toggleScroll()">🕊️</span>
           <div class="words-scroll" id="words-scroll">
             <span id="words"></span>

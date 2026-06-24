@@ -89,11 +89,15 @@ document.getElementById("left").innerHTML= html;
 }
 }
 show();
+const pagesound = new Audio('assets/sounds/page.wav');
 
 document.getElementById("next").onclick = function() {
     if(current < pages.length - 1) {
         current = current + 1;
         show();
+         pagesound.currentTime = 0;
+            pagesound.play();
+
     }
 };
 
@@ -101,7 +105,8 @@ document.getElementById("prev").onclick = function() {
     if(current > 0) {
         current = current - 1;
         show();
+         pagesound.currentTime = 0;
+            pagesound.play();
     }
 };
-
 
