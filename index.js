@@ -107,6 +107,7 @@ const core = new Audio('assets/sounds/core.mp3');
  document.querySelector('.watch').addEventListener('click', () => {
   transform.currentTime = 0;
   transform.play();
+  transform.volume = 0.6;
  });
 
  document.querySelector('.watch').addEventListener('click', () => {
@@ -115,3 +116,32 @@ const core = new Audio('assets/sounds/core.mp3');
     void flashgreen.offsetWidth;
     flashgreen.classList.add('active');
  });
+
+ const creeper = new Audio('assets/sounds/creeper.mp3')
+ document.getElementById('gravel').addEventListener('click', () => {
+    creeper.currentTime = 0;
+    creeper.play();
+ });
+
+
+ const cursors = [
+    "assets/cursors/alienx.cur",
+    "assets/cursors/brain.cur",
+    "assets/cursors/chromastone.cur",
+    "assets/cursors/dmndhead.cur",
+    "assets/cursors/ghost.cur",
+    "assets/cursors/heat.cur",
+    "assets/cursors/upgrade.cur",
+    "assets/cursors/waybig.cur",
+    "assets/cursors/wildvine.cur",
+    "assets/cursors/xlr8.cur"
+ ] ; 
+
+ document.querySelector('.watch').addEventListener('click', () =>  {
+    const randomCursor = 
+    cursors[Math.floor(Math.random() * cursors.length)];
+
+    document.body.style.cursor = `url('${randomCursor}'), auto`;
+
+
+ } );

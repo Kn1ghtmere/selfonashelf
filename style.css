@@ -166,6 +166,18 @@ body {
      height: 85px;
      width: 85px;
 }
+
+.dirt {
+  position: relative;
+  height: 85px;
+  width: 85px;
+}
+
+.dirt img {
+  position:absolute;
+  height: 100%;
+  width: 100%;
+}
 .watch {
   position: relative;
   height: 75px;
@@ -237,6 +249,12 @@ footer {
   display:block;
 }
 .hourglass:hover .descriptions {
+  display: block;
+}
+.dirt:hover .descriptions {
+  display:block;
+}
+.watch:hover .descriptions {
   display: block;
 }
 .socials:hover .descriptions {
