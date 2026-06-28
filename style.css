@@ -135,6 +135,20 @@ body {
   height:100%;
   width: 100%;
 }
+.dino {
+  position: relative;
+}
+.dino img {
+  height: 100%;
+  width: 100%;
+}
+.whiteboard {
+  position: relative;
+}
+.whiteboard img {
+  height: 100%;
+  width: 100%;
+}
 
 #omnitrix, #omnitrixopen {
   transition: opacity 0.3s ease;
@@ -255,6 +269,12 @@ footer {
   display:block;
 }
 .watch:hover .descriptions {
+  display: block;
+}
+#dino:hover .descriptions {
+  display: block;
+}
+.whiteboard:hover .descriptions {
   display: block;
 }
 .socials:hover .descriptions {

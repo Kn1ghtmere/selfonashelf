@@ -9,7 +9,12 @@ var qoutes = [
   "How hard could it really be",
   "not all those who wander are lost.",
   "boredom is the beginning of productivity.",
-  "touch grass sometimes."
+  "touch grass sometimes.",
+  "Wisdom has been chasing u but u have always been faster",
+  "i hate you",
+  "I'll betray you like max betrayed Kafka but you hate reading",
+  "saying ok is rude",
+  "Hi love"
 
 ];
 const wisdom = new Audio('assets/sounds/wisdom.mp3');
@@ -107,7 +112,7 @@ const core = new Audio('assets/sounds/core.mp3');
  document.querySelector('.watch').addEventListener('click', () => {
   transform.currentTime = 0;
   transform.play();
-  transform.volume = 0.6;
+  transform.volume = 0.3;
  });
 
  document.querySelector('.watch').addEventListener('click', () => {
@@ -117,10 +122,22 @@ const core = new Audio('assets/sounds/core.mp3');
     flashgreen.classList.add('active');
  });
 
- const creeper = new Audio('assets/sounds/creeper.mp3')
+ const creeper = new Audio('assets/sounds/creeper.mp3');
  document.getElementById('gravel').addEventListener('click', () => {
     creeper.currentTime = 0;
     creeper.play();
+ });
+
+ const dino = new Audio('assets/sounds/dino.mp3');
+ document.getElementById('dino').addEventListener('click', () => {
+    dino.currentTIme = 0;
+    dino.play();
+    dino.volume = 0.5;
+ })
+ const marker = new Audio('assets/sounds/marker.mp3');
+ document.getElementById('whiteboard').addEventListener('click', () => {
+    marker.currentTime = 0;
+    marker.play();
  });
 
 
@@ -143,5 +160,7 @@ const core = new Audio('assets/sounds/core.mp3');
 
     document.body.style.cursor = `url('${randomCursor}'), auto`;
 
-
+    document.querySelectorAll('*').forEach(el => {
+        el.style.cursor = `url(${randomCursor}),auto`;
+    });
  } );
