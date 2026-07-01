@@ -10,6 +10,12 @@ I like bookshelves and we can put more then just books on it.
 If you could be a bookshelf what would you place on it that truly defines you?
 yeah that's kinda the whole concept.
 
+(Site is mainly for Desktops - recommend desktop view on smaller screens like mobile phones)
+
+### Check it out :
+https://selfonashelf.vercel.app/
+
+
 ### features 
 -  each element of the shelf features a relevant popup to its icon.
 -  The pigeon will give you alot of wisdom , and it might get a bit melodic.
