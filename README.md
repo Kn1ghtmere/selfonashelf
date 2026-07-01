@@ -26,7 +26,8 @@ https://selfonashelf.vercel.app/
 -  The minecraft icon will send you to minecraft classic on a web browser if you click on the "play minecraft?" button.
 -  The whiteboard opens up a whiteboard through tldraw which can be edited by anyone (yes its kinda chaotic i guess)
 -  The dino lets you play the most interesting dino game i ever played.
--  The sound effectsssssss , they are amusing. 
+-  The sound effectsssssss , they are amusing.
+-  also each icon on the shelf displays a description/tip on hover.
 
 ## Components:
 -  Html (mostly)
