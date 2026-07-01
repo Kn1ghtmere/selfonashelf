@@ -152,7 +152,7 @@
           </div>
 
           <div class="socials">
-            <img src="assets/gmail.png" style="height: 100%; width: auto;" onclick="getElementById('mailme').style.display='flex'">
+            <img src="assets/gmail.png" style="height: 100%; width: auto;" onclick="document.getElementById('mailme').style.display='flex'">
             <span class="descriptions">I dont really know why u'd need it, but sure</span>
           
           </div>
@@ -195,7 +195,7 @@
      
        <div id="book1" style="display:none; z-index:100; position:fixed; inset:0; background:rgba(0,0,0,0.6); align-items:center; justify-content:center;" onclick="if(event.target===this) { this.style.display='none'; booksound.pause(); booksound.currentTime=0;}">
     
-        <iframe src="book1.html" width="600" height="420" style="border:none" z-index:100;></iframe>
+        <iframe src="book1.html" width="600" height="420" style="border:none"></iframe>
                
        </div> 
        <div id="scroll1" style="display:none; z-index:100; position:fixed; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content:center;" onclick="if(event.target===this) { this.style.display='none'; scrollsound.pause(); scrollsound.currentTime=0;}">
@@ -254,7 +254,7 @@
           <iframe src="https://dino-chrome.com/" style="border: none; width: 1000px; height:600px;"></iframe>
         </div>
         <div id="board" style="display: none; position:fixed; z-index:100; inset:0; background: rgba(0,0,0,0.6); align-items: center; justify-content: center;" onclick="if(event.target===this) {this.style.display ='none'; marker.pause(); marker.currentTime=0;}">
-          <iframe src="https://www.tldraw.com/f/VSH-6LiC0AStBhk70Nz40?d=v-215.-1935.2450.1395.page" style="border: none; width: 800px; height: 600px;"></iframe>
+          <iframe src="https://www.tldraw.com/f/VSH-6LiC0AStBhk70Nz40" style="border: none; width: 800px; height: 600px;"></iframe>
         </div>
         <div id="mailme" style="display:none; position:fixed; text-align: center; z-index: 100; inset: 0; background: rgba(0,0,0,0.6); align-items: center; justify-content: center;" onclick="if(event.target===this) this.style.display='none'">
           <iframe src="emailform.html" style="border: none; width: 620px; height: 620px;"></iframe>
